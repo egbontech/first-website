@@ -1,0 +1,54 @@
+*{padding:0;margin:0;}
+                                                           /*body*/
+ body{background-image:linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8)),url(images/image7.jpg);background-size:100%;font-family:'Times New Roman', Times, serif;font-size: 20px}
+                                                          /*Nav Bar*/
+ nav{display:flex;justify-content:space-around;align-items:center;height:100px;}                                                       
+.nav-links{display:flex;list-style: none;width:50%;justify-content: space-around;height:cover;margin-left: auto;align-items: center;}
+.nav-links li a{text-decoration: none;color:white;font-size: 13px;font-weight: bold;text-transform: uppercase;font-family:'Times New Roman', Times, serif}
+.logo{font-size: 30px;text-align:left ;color:#f44336;padding-left:30px;width:60%;font-weight: bolder;border-radius: 10px;font-family:'Courier New', Courier, monospace;line-height: 100px;}
+.nav-links li a::after{content:'';height:2px;width:0%;display:block;background:#f44336;transition:0.3s ease-in-out;margin: auto;}
+.nav-links li a:hover::after{width: 100%;} 
+.burger{display:none}
+.burger div{width:25px;height:3px;background-color:white;margin:5px;border-radius:3px;transition:all 0.3s ease}
+
+                                                                                                  /* home page  */
+.text-box{width:90%;color:white;position:absolute;top:50%;left:50%;text-align: center;transform: translate(-50%,-50%);z-index: -2;}
+.text-box h1{font-size:62px}
+.text-box p{margin: 10px 0 30px;}
+.visit{display:inline-block;padding:5px;text-decoration: none;color:white;font-size:20px;border: 2px solid #f44336;position: relative;transition: 0.7s ease-in-out;}
+.visit:hover{background: #f44336;}    
+                                                                                                 /*home page media quaries*/
+                                                         /*tablets*/                                        
+ @media screen and (max-width:920px){.nav-links{width:100%;clear: left;}
+ .logo{width:70%;font-size:25px}.nav-links li a{font-size: 11px;}.text-box h1{font-size:42px}.text-box p{font-size: 15px;}.visit{font-size:15px}
+
+
+ }                                                                                              
+
+                                                                                               /*mobiles*/
+@media screen and (max-width:620px){body{overflow-x: hidden;}.logo{font-size: 25px;text-align: left;width: 80%;}.nav-links li{opacity:0;margin:30px;}
+.burger{display:block;cursor:pointer;margin-right: 15px;line-height:20px;z-index: 4;}
+.nav-links{position:absolute;right:-15px;top:-30px;background:#f44336;flex-direction:column;display: none;height:80%;align-items:center;width:70%;justify-content:center;z-index: 2;
+transition: 1s ease-in;margin-top: 30px;overflow-x:hidden;border-radius: 0 0 0 75%;}
+.nav-links li{opacity:0;margin:30px;align-items: center;}
+.nav-active{display: flex;} 
+@keyframes navlinkFade{ from{ opacity:0;transform:translateX(50px)} to {opacity:1;transform: translateY(0px)}
+}                                                                                                                                                   
+.toggle .line1{ transform: rotate(-45deg) translate(-5px,6px);}  
+.toggle .line2{opacity:0}  
+.toggle .line3{transform: rotate(45deg) translate(-5px,-6px)} 
+                                                                                  
+
+}
+                                                                                    /*smaller screen phones*/
+@media screen and (max-width:313px){.logo{font-size:15px } 
+
+    
+}
+
+
+
+
+                                                                                          
+                                                                                              
+                                                       
