@@ -1,1 +1,126 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8"/>
+    <title> Ewebdev.homepage</title>
+    <link rel="stylesheet"type="text/css" href="../style.css">
+    <link rel="stylesheet"type="text/css" href="style2.css">
+    <link rel="stylesheet"type="text/css" href="../font-awesome/css/all.min.css">
 
+</head>
+<body>
+    
+<nav>
+    
+    <div class="logo">  
+       
+        <h2>E-webdev</h2>
+      
+    </div> 
+    <div class="burger"on click="navSlide()" >
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>  
+    <ul class="nav-links">  
+         
+        
+        <li><a href="../index.html">&nbspHome</a></li>
+        <li><a href="../about/about.html">about&nbsp&nbspUs</a></li>    
+        <li><a href="#">course</a></li>  
+        <li><a href="../contact/contact.html">contact</a></li> 
+    </ul>
+</nav>
+
+<div class="course">
+   <h1>Courses</h1>
+</div>
+
+<div class="course-p"><p>This page we will discuss the courses students can participate in during their stay in this university</p></div>
+<div class="container1">    
+     <div class="text1">
+         <h2>Engineering</h2>
+         <p>In this faculty we have various departments,
+             a few being Electrical,chemical,mechanical,
+             petroleum,civil  and structural.
+             our goal is to give the bext Engineering education 
+             possible to our students.
+         </p>
+
+        
+     </div>
+     <div class="text1">    
+        <h2>Medicine</h2>
+        <p>In this faculty we have various departments,a few being Electrical,chemical,mechanical,
+            petroleum,civil  and structural.
+            our goal is to give the bext Engineering education possible to our students</p>
+     </div>
+     <div class="text1">
+        <h2>Law</h2>
+        <p>In this faculty we have various departments,a few being Electrical,
+            chemical,mechanical,petroleum,civil  and structural.
+            our goal is to give the bext Engineering education possible to our
+         students</p>
+    </div>
+    
+
+</div>
+
+    <div class ="footer">
+        <div class="c">
+        <ul class="social">
+            <li> <a href="#"> <i id="li" class="fab fa-linkedin"></i></a></li>  
+            <li> <a href="#"> <i id="li" class="fab fa-facebook"></i></a></li>  
+            <li> <a href="#"> <i id="li" class="fab fa-instagram"></i></a></li>  
+            <li> <a href="#"> <i id="li" class="fab fa-twitter"></i></a></li>  
+        </ul>
+      <div class="copy">
+         <p> &#169&nbspAll rights reserved by E-webdev.</p><br>
+          <p>This website was made with love&nbsp&#9829&nbsp Egbon</p>
+    
+    
+      </div>
+    
+    
+    </div>
+    </div>
+    
+
+
+
+
+
+
+</body>
+
+<script src="../script.js"></script>
+<script>
+    function scrollAppear(){
+   var intro = document.querySelector('.container1')
+    const introP = intro.getBoundingClientRect().top;
+     var screen = window.innerHeight;
+      
+      if(introP < screen){
+             intro.classList.add('appear');           
+
+      }
+
+}
+window.addEventListener('scroll', scrollAppear);
+</script>
+<script>
+    function scrollAppear(){
+   var intro = document.querySelector('.c')
+    const introP = intro.getBoundingClientRect().top;
+     var screen = window.innerHeight;
+      
+      if(introP < screen){
+             intro.classList.add('appearF');           
+
+      }
+
+}
+window.addEventListener('scroll', scrollAppear);
+</script>
+</html>

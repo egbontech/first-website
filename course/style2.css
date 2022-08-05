@@ -1,0 +1,44 @@
+                                                                                 /*styling for course section*/
+body{background: white;overflow-x: hidden;}  
+.logo{line-height: 20px;}  
+nav{height:220px;background-image:linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8)),url(../images/image7.jpg);background-size:100%;align-items: flex-start;
+padding-top: 50px}
+.course{color:#f44336;margin: auto;height: 100p;text-align: center;line-height:120p;font-size:40px;}
+.course-p{font-size: 20px;text-align: center;padding: 15px;}
+.container1{display:grid;height:300px;opacity: 0;transform: translateY(50px);transition: 2s all ease-in-out;
+ grid-template-columns:1fr 1fr 1fr;word-wrap: break-word;}
+ .container1 div{height:200px;text-align: center;border-radius: 10px;font-size: 18px;font-family:'Times New Roman', Times, serif;margin: 10px;overflow-x:hidden;
+background: #fff3f3;}
+.container1 div p{padding: 20px;}
+.container1 div h2{color:#f44336}
+.text1:hover{box-shadow:10px 10px 10px 0 rgba(0,0,0,0.2)}
+.gallery{display: grid;grid-template-columns: 1fr 1fr 1fr;height: 600px;overflow-x: hidden;}
+.gallery img{width:90%;height: 400px;margin: auto;border-radius: 10px;opacity: 0.85;transition: 1s ease-in-out;}
+.gallery img:hover{opacity: 1;}
+.desc{text-align: center;}
+.desc p{padding:10px;}
+.footer{background: rgba(4,9,30,0.8);height:100%;width: 100%;overflow-x: hidden;}
+.social{margin-top: 20px;display:flex;justify-content: center;} 
+.social a{margin:20px;font-size: 30px;color: white;transition: 1s ease-in-out;}
+.social li{list-style: none;margin-top: 50px;}
+.copy{text-align: center;margin-top: 20px;color: white;}
+.social a:hover{color:#f44336}
+.c{transform: translateX(1000px);transition: 0.5s all ease-in-out;transition-delay: 3s;}
+.appear{opacity: 1;transform: translateX(0px);}
+.appearF{opacity: 1;transform: translateX(0px);transform: translateY(-20px);}
+
+
+
+
+
+@media screen and (max-width:1040px){.container1{grid-template-columns: 1fr 1fr;height: 500px;}.gallery{grid-template-columns: 1fr 1fr;height: 1150px;}
+
+}
+@media screen and (max-width:768px){.course{font-size: 32px;}.container1{grid-template-columns: 1fr;height: 700px;}nav{height:150px}
+.gallery{grid-template-columns: 1fr;height: 1600px;}.social a{margin:10px}
+
+
+}
+@media screen and (max-width:420px){.course{font-size: 20px;}.container1 div{height: 260px;}.container1{height: 900px;}
+
+}
